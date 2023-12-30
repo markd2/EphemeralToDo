@@ -23,7 +23,7 @@ struct ContentView: View {
                     EntryView(entries: $entries)
                 }
             case .run:
-                RunView()
+                RunView(entries: entries)
         }
     }
 }
