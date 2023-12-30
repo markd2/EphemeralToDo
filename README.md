@@ -22,3 +22,13 @@ two main modes, Entry and Run
   - button "done / done and keep"
     - done will nuke the item from the list and go back to the roll screen
     - done and keep will go to the roll screen but not nuke the item
+
+## Huh. It works
+
+| Adding things to the list. | Roll! | Picked one! |
+| --- | --- | --- |
+| ![](assets/entry.png) | ![](assets/roll.png)  | ![](assets/rolled.png) |
+
+Demo Movie!
+
+![yay movie](assets/demo-movie.mov)
