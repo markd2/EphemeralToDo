@@ -29,6 +29,7 @@ two main modes, Entry and Run
 | --- | --- | --- |
 | ![](assets/entry.png) | ![](assets/roll.png)  | ![](assets/rolled.png) |
 
-Demo Movie!
+## Demo Movie!
 
-![yay movie](assets/demo-movie.mov)
+https://github.com/markd2/EphemeralToDo/assets/609957/5c06daa6-3a11-47ac-83ec-9afa688c5e0f
+
