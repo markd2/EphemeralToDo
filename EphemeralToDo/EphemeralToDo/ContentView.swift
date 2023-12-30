@@ -1,7 +1,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var entries: [Entry] = []
+    @State var entries: [Entry] = [] {
+        didSet {
+            if entries.count == 0 {
+                screen = .entry
+            }
+        }
+    }
     @State var screen: Screen = .entry
 
     enum Screen {
@@ -23,7 +29,7 @@ struct ContentView: View {
                     EntryView(entries: $entries)
                 }
             case .run:
-                RunView(entries: entries)
+                RunView(entries: $entries, screen: $screen)
         }
     }
 }

@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct RunView: View {
-    // not a binding, since it's ephemeral
-    @State var entries: [Entry]
+    @Binding var entries: [Entry]
+    @Binding var screen: ContentView.Screen
+
     @State var entry: Entry?
 
     var body: some View {
@@ -16,6 +17,9 @@ struct RunView: View {
                     self.entry = nil
                     entries.removeAll { thing in
                         thing.id == entry.id
+                    }
+                    if entries.isEmpty {
+                        screen = .entry
                     }
                 }
                 Spacer()
@@ -33,7 +37,8 @@ struct RunView: View {
 }
 
 #Preview {
-    let entries = ["greeble", "bork", "splunge"]
+    @State var entries = ["greeble", "bork", "splunge"]
       .map(Entry.init)
-    return RunView(entries: entries)
+    @State var screen = ContentView.Screen.run
+    return RunView(entries: $entries, screen: $screen)
 }
