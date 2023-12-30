@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  EphemeralToDo
-//
-//  Created by Mark Dalrymple on 12/30/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
