@@ -1,6 +1,11 @@
 import Foundation
 
-struct Entry: Identifiable {
+struct Entry: Identifiable, Codable {
     let thing: String
-    let id: UUID = UUID()
+    let id: UUID
+    
+    init(_ thing: String) {
+        self.thing = thing
+        id = UUID()
+    }
 }

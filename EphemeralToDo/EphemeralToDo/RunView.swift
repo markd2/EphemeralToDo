@@ -23,6 +23,7 @@ struct RunView: View {
                         entries.removeAll { thing in
                             thing.id == entry.id
                         }
+                        ContentView.saveToUserDefaults(entries)
                         if entries.isEmpty {
                             moveToEntryScreen()
                         }

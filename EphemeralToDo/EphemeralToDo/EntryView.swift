@@ -32,9 +32,9 @@ struct EntryView: View {
     }
 
     func makeNewThing(from thing: String) {
-        let entry = Entry(thing: thing)
+        let entry = Entry(thing)
         entries.append(entry)
-        print(entries)
+        ContentView.saveToUserDefaults(entries)
     }
 }
 

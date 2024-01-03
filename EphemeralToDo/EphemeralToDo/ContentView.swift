@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var entries: [Entry] = [] {
+    @State var entries: [Entry] {
         didSet {
+            ContentView.saveToUserDefaults(entries)
             if entries.count == 0 {
                 screen = .entry
             }
@@ -13,6 +14,21 @@ struct ContentView: View {
     enum Screen {
         case entry
         case run
+    }
+    
+    static func saveToUserDefaults(_ entries: [Entry]) {
+        let data = try! JSONEncoder().encode(entries)
+        UserDefaults.standard.set(data, forKey: "EntriesJSON")
+        UserDefaults.standard.synchronize()
+    }
+
+    init() {
+        if let data = UserDefaults.standard.data(forKey: "EntriesJSON"),
+           let entries = try? JSONDecoder().decode([Entry].self, from: data) {
+            self.entries = entries;
+        } else {
+            self.entries = []
+        }
     }
     
     var body: some View {
