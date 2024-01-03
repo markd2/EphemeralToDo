@@ -9,27 +9,37 @@ struct ContentView: View {
         }
     }
     @State var screen: Screen = .entry
-
+    
     enum Screen {
         case entry
         case run
     }
-
+    
     var body: some View {
         switch screen {
-            case .entry: 
-                VStack {
-                    HStack {
-                        Spacer()
-                        Button("Done") {
-                            print("Splunge")
-                            screen = .run
-                        }.padding([.trailing])
-                    }
-                    EntryView(entries: $entries)
+        case .entry: 
+            VStack {
+                HStack {
+                    Spacer()
+                    Button("Roll!") {
+                        screen = .run
+                    }.padding([.trailing])
                 }
-            case .run:
+                EntryView(entries: $entries)
+            }
+        case .run:
+            VStack {
+                HStack {
+                    Spacer()
+                    Button("Edit Entries") {
+                        screen = .entry
+                    }.padding([.trailing])
+                }
+                Spacer()
                 RunView(entries: $entries, screen: $screen)
+                Spacer()
+
+            }
         }
     }
 }

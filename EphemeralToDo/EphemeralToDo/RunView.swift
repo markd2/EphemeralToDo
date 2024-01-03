@@ -6,31 +6,37 @@ struct RunView: View {
 
     @State var entry: Entry?
 
+    func moveToEntryScreen() {
+        screen = .entry
+    }
+
     var body: some View {
-        if let entry {
-            Text(entry.thing)
-              .font(.largeTitle)
-            .padding([.bottom], 50.0)
-
-            HStack {
-                Button("Done") {
-                    self.entry = nil
-                    entries.removeAll { thing in
-                        thing.id == entry.id
+        VStack {
+            if let entry {
+                Text(entry.thing)
+                  .font(.largeTitle)
+                  .padding([.bottom], 50.0)
+                
+                HStack {
+                    Button("Done") {
+                        self.entry = nil
+                        entries.removeAll { thing in
+                            thing.id == entry.id
+                        }
+                        if entries.isEmpty {
+                            moveToEntryScreen()
+                        }
                     }
-                    if entries.isEmpty {
-                        screen = .entry
+                    Spacer()
+                    Button("Done/Keep") {
+                        self.entry = nil
                     }
+                }.padding([.leading, .trailing], 50.0)
+                
+            } else {
+                Button("Roll!") {
+                    entry = entries.randomElement()
                 }
-                Spacer()
-                Button("Done/Keep") {
-                    self.entry = nil
-                }
-            }.padding([.leading, .trailing], 50.0)
-
-        } else {
-            Button("Roll!") {
-                entry = entries.randomElement()
             }
         }
     }
