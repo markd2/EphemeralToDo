@@ -20,8 +20,8 @@ struct EntryView: View {
               .textInputAutocapitalization(.never)
               .disableAutocorrection(true)
               .border(.secondary)
-            List(entries) { entry in
-                Text(entry.thing)
+            List($entries, id: \.self, editActions: .delete) { entry in
+                Text(entry.wrappedValue.thing)
             }
             .listStyle(.plain)
         }
