@@ -13,6 +13,19 @@ struct RunView: View {
     @State private var timer: Timer?
     @State private var audioPlayer: AVAudioPlayer?
     
+    init(entries: Binding<[Entry]>, screen: Binding<ContentView.Screen>) {
+        self._entries = entries
+        self._screen = screen
+        
+        // Configure audio session for playback even in silent mode
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to configure audio session: \(error)")
+        }
+    }
+    
     func moveToEntryScreen() {
         screen = .entry
     }
