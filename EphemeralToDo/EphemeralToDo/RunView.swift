@@ -37,7 +37,7 @@ struct RunView: View {
     }
     
     func playSound() {
-        guard let soundURL = Bundle.main.url(forResource: "timer-complete", withExtension: "mp3") else {
+        guard let soundURL = Bundle.main.url(forResource: "coin", withExtension: "wav") else {
             print("Sound file not found")
             return
         }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D2A6C2C2B40A3EA00FE10AB /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A6C2B2B40A3EA00FE10AB /* EntryView.swift */; };
 		7D2A6C2E2B40A3F200FE10AB /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A6C2D2B40A3F200FE10AB /* RunView.swift */; };
+		7D6F076A2DA2FDFE00508457 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F07692DA2FDFE00508457 /* coin.wav */; };
 		7DBD295B2B40971000B8A65F /* EphemeralToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD295A2B40971000B8A65F /* EphemeralToDoApp.swift */; };
 		7DBD295D2B40971000B8A65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD295C2B40971000B8A65F /* ContentView.swift */; };
 		7DBD295F2B40971100B8A65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD295E2B40971100B8A65F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		7D2A6C2B2B40A3EA00FE10AB /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		7D2A6C2D2B40A3F200FE10AB /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
+		7D6F07692DA2FDFE00508457 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
 		7DBD29572B40971000B8A65F /* EphemeralToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EphemeralToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD295A2B40971000B8A65F /* EphemeralToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EphemeralToDoApp.swift; sourceTree = "<group>"; };
 		7DBD295C2B40971000B8A65F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		7DBD29592B40971000B8A65F /* EphemeralToDo */ = {
 			isa = PBXGroup;
 			children = (
+				7D6F07692DA2FDFE00508457 /* coin.wav */,
 				7DBD295A2B40971000B8A65F /* EphemeralToDoApp.swift */,
 				7DBD295C2B40971000B8A65F /* ContentView.swift */,
 				7DBD295E2B40971100B8A65F /* Assets.xcassets */,
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6F076A2DA2FDFE00508457 /* coin.wav in Resources */,
 				7DBD29622B40971100B8A65F /* Preview Assets.xcassets in Resources */,
 				7DBD295F2B40971100B8A65F /* Assets.xcassets in Resources */,
 			);
