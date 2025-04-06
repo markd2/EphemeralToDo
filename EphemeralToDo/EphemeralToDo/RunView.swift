@@ -5,9 +5,11 @@ struct RunView: View {
     @Binding var entries: [Entry]
     @Binding var screen: ContentView.Screen
 
+    private let timeboxDurationSeconds = 30 * 60 // 30 minutes in seconds
+    
     @State var entry: Entry?
     @State private var isTimerRunning = false
-    @State private var timeRemaining = 30 * 60 // 30 minutes in seconds
+    @State private var timeRemaining = 0
     @State private var timer: Timer?
     @State private var audioPlayer: AVAudioPlayer?
     
@@ -17,7 +19,7 @@ struct RunView: View {
     
     func startTimer() {
         isTimerRunning = true
-        timeRemaining = 30 * 60
+        timeRemaining = timeboxDurationSeconds
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             if timeRemaining > 0 {
                 timeRemaining -= 1
