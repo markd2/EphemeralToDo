@@ -18,6 +18,14 @@
 		7D5490652E5B9831000C5BF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD29612B40971100B8A65F /* Preview Assets.xcassets */; };
 		7D5490662E5B9831000C5BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD295E2B40971100B8A65F /* Assets.xcassets */; };
 		7D6F076A2DA2FDFE00508457 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F07692DA2FDFE00508457 /* coin.wav */; };
+		7D99357D2E5D1D5A003D5686 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD29682B409B8700B8A65F /* Entry.swift */; };
+		7D99357E2E5D1D5A003D5686 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A6C2D2B40A3F200FE10AB /* RunView.swift */; };
+		7D99357F2E5D1D5A003D5686 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD295C2B40971000B8A65F /* ContentView.swift */; };
+		7D9935802E5D1D5A003D5686 /* EphemeralToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD295A2B40971000B8A65F /* EphemeralToDoApp.swift */; };
+		7D9935812E5D1D5A003D5686 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A6C2B2B40A3EA00FE10AB /* EntryView.swift */; };
+		7D9935842E5D1D5A003D5686 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F07692DA2FDFE00508457 /* coin.wav */; };
+		7D9935852E5D1D5A003D5686 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD29612B40971100B8A65F /* Preview Assets.xcassets */; };
+		7D9935862E5D1D5A003D5686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD295E2B40971100B8A65F /* Assets.xcassets */; };
 		7DBD295B2B40971000B8A65F /* EphemeralToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD295A2B40971000B8A65F /* EphemeralToDoApp.swift */; };
 		7DBD295D2B40971000B8A65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD295C2B40971000B8A65F /* ContentView.swift */; };
 		7DBD295F2B40971100B8A65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD295E2B40971100B8A65F /* Assets.xcassets */; };
@@ -30,6 +38,7 @@
 		7D2A6C2D2B40A3F200FE10AB /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
 		7D54906A2E5B9831000C5BF4 /* AppIdeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIdeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6F07692DA2FDFE00508457 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		7D99358A2E5D1D5A003D5686 /* TechIdeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechIdeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD29572B40971000B8A65F /* EphemeralToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EphemeralToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD295A2B40971000B8A65F /* EphemeralToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EphemeralToDoApp.swift; sourceTree = "<group>"; };
 		7DBD295C2B40971000B8A65F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +49,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		7D5490622E5B9831000C5BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D9935822E5D1D5A003D5686 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,6 +85,7 @@
 			children = (
 				7DBD29572B40971000B8A65F /* EphemeralToDo.app */,
 				7D54906A2E5B9831000C5BF4 /* AppIdeas.app */,
+				7D99358A2E5D1D5A003D5686 /* TechIdeas.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +131,23 @@
 			name = AppIdeas;
 			productName = EphemeralToDo;
 			productReference = 7D54906A2E5B9831000C5BF4 /* AppIdeas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D99357B2E5D1D5A003D5686 /* TechIdeas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D9935872E5D1D5A003D5686 /* Build configuration list for PBXNativeTarget "TechIdeas" */;
+			buildPhases = (
+				7D99357C2E5D1D5A003D5686 /* Sources */,
+				7D9935822E5D1D5A003D5686 /* Frameworks */,
+				7D9935832E5D1D5A003D5686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TechIdeas;
+			productName = EphemeralToDo;
+			productReference = 7D99358A2E5D1D5A003D5686 /* TechIdeas.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7DBD29562B40971000B8A65F /* EphemeralToDo */ = {
@@ -163,6 +197,7 @@
 			targets = (
 				7DBD29562B40971000B8A65F /* EphemeralToDo */,
 				7D54905B2E5B9831000C5BF4 /* AppIdeas */,
+				7D99357B2E5D1D5A003D5686 /* TechIdeas */,
 			);
 		};
 /* End PBXProject section */
@@ -175,6 +210,16 @@
 				7D5490642E5B9831000C5BF4 /* coin.wav in Resources */,
 				7D5490652E5B9831000C5BF4 /* Preview Assets.xcassets in Resources */,
 				7D5490662E5B9831000C5BF4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D9935832E5D1D5A003D5686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9935842E5D1D5A003D5686 /* coin.wav in Resources */,
+				7D9935852E5D1D5A003D5686 /* Preview Assets.xcassets in Resources */,
+				7D9935862E5D1D5A003D5686 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +245,18 @@
 				7D54905F2E5B9831000C5BF4 /* ContentView.swift in Sources */,
 				7D5490602E5B9831000C5BF4 /* EphemeralToDoApp.swift in Sources */,
 				7D5490612E5B9831000C5BF4 /* EntryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D99357C2E5D1D5A003D5686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D99357D2E5D1D5A003D5686 /* Entry.swift in Sources */,
+				7D99357E2E5D1D5A003D5686 /* RunView.swift in Sources */,
+				7D99357F2E5D1D5A003D5686 /* ContentView.swift in Sources */,
+				7D9935802E5D1D5A003D5686 /* EphemeralToDoApp.swift in Sources */,
+				7D9935812E5D1D5A003D5686 /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +286,7 @@
 				DEVELOPMENT_TEAM = 2HBB3G8HCG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "App Ideas";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -258,6 +316,7 @@
 				DEVELOPMENT_TEAM = 2HBB3G8HCG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "App Ideas";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -269,6 +328,66 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.borkware.AppIdeas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D9935882E5D1D5A003D5686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EphemeralToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = 2HBB3G8HCG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tech Ideas";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borkware.TechIdeas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D9935892E5D1D5A003D5686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EphemeralToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = 2HBB3G8HCG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tech Ideas";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borkware.TechIdeas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -406,6 +525,7 @@
 				DEVELOPMENT_TEAM = 2HBB3G8HCG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ephemeral ToDo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -435,6 +555,7 @@
 				DEVELOPMENT_TEAM = 2HBB3G8HCG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ephemeral ToDo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +582,15 @@
 			buildConfigurations = (
 				7D5490682E5B9831000C5BF4 /* Debug */,
 				7D5490692E5B9831000C5BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D9935872E5D1D5A003D5686 /* Build configuration list for PBXNativeTarget "TechIdeas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D9935882E5D1D5A003D5686 /* Debug */,
+				7D9935892E5D1D5A003D5686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

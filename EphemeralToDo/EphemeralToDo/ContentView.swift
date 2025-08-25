@@ -31,11 +31,19 @@ struct ContentView: View {
         }
     }
     
+    func displayName() -> String {
+        // if we can't get the display name, then everything is screwed, so ok to die.
+        let bundleDisplayName = Bundle.main.infoDictionary?["CFBundleDisplayName"] as! String
+        return bundleDisplayName
+    }
+    
     var body: some View {
         switch screen {
         case .entry: 
             VStack {
                 HStack {
+                    Spacer()
+                    Text(displayName()).bold()
                     Spacer()
                     Button("Roll!") {
                         screen = .run
